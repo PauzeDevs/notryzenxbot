@@ -94,7 +94,7 @@ CRITICAL - DO NOT DO THESE:
 };
 
 /**
- * Project: PauzeX
+ * Project: NotRyzenX
  * AI assistant and moderation bot for NotRyzenX.
  * Created by Pauze.
  */
