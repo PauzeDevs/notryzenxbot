@@ -1,6 +1,6 @@
 <div align="center">
 
-# PauzeX
+# NotRyzenX
 
 A self-hostable multipurpose Discord bot built with Discord.js v14 for moderation, server security, community management, AI, automation, and utility tooling.
 
@@ -12,7 +12,7 @@ A self-hostable multipurpose Discord bot built with Discord.js v14 for moderatio
 
 ## Overview
 
-PauzeX combines moderation, security, automation, community systems, and utility features in a single Discord bot. It supports both prefix and slash commands through a hybrid command system, with persistent server data stored in PostgreSQL through Sequelize.
+NotRyzenX combines moderation, security, automation, community systems, and utility features in a single Discord bot. It supports both prefix and slash commands through a hybrid command system, with persistent server data stored in PostgreSQL through Sequelize.
 
 Features are configured per server through the bot's setup systems.
 
@@ -111,8 +111,8 @@ The existing command, gateway, database, and utility architecture is intentional
 
 ## Credits
 
-**Project:** PauzeX  
-**Maintained by:** [PauzeDevs](https://github.com/PauzeDevs)
+**Project:** NotRyzenX  
+**Maintained by:** NotRyzenX
 
 ## License
 
