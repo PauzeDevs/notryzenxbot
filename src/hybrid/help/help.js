@@ -200,7 +200,43 @@ async function createHelpContainer(categoryKey = null, botAvatarURL, userAvatarU
             }
         }
 
-        const allCats = { ...categories, ...extraCategories };\n\n        // Components V2 TextDisplay may show unavailable custom emojis\n        // as raw :emoji_name: text. Unicode icons always render.\n        const categoryIcons = {\n            general: '🛠️',\n            information: 'ℹ️',\n            moderation: '🛡️',\n            antinuke: '🧱',\n            automod: '🤖',\n            tickets: '🎫',\n            welcome: '👋',\n            logging: '📋',\n            fun: '🎮',\n            roleplay: '🎭',\n            social: '🌐',\n            utility: '🔧',\n            animals: '🐾',\n            giveaway: '🎁',\n            vanity: '✨',\n            feedback: '💬',\n            j2c: '🔊',\n            automation: '⚙️',\n            profiles: '👤',\n            media: '🖼️',\n            misc: '📦',\n            tracking: '📊',\n            voice: '🎙️',\n            ai: '🧠',\n            reactionroles: '🔘'\n        };\n\n        const categoryList = Object.entries(allCats).map(([key, cat]) => {\n            const icon = categoryIcons[key] || '•';\n            return `> ${icon} \`»\` **${cat.name}**`;\n        }).join('\\n');\n\n        const headerSection = new SectionBuilder()
+        const allCats = { ...categories, ...extraCategories };
+
+        // Components V2 TextDisplay may show unavailable custom emojis
+        // as raw :emoji_name: text. Unicode icons always render.
+        const categoryIcons = {
+            general: '🛠️',
+            information: 'ℹ️',
+            moderation: '🛡️',
+            antinuke: '🧱',
+            automod: '🤖',
+            tickets: '🎫',
+            welcome: '👋',
+            logging: '📋',
+            fun: '🎮',
+            roleplay: '🎭',
+            social: '🌐',
+            utility: '🔧',
+            animals: '🐾',
+            giveaway: '🎁',
+            vanity: '✨',
+            feedback: '💬',
+            j2c: '🔊',
+            automation: '⚙️',
+            profiles: '👤',
+            media: '🖼️',
+            misc: '📦',
+            tracking: '📊',
+            voice: '🎙️',
+            ai: '🧠',
+            reactionroles: '🔘'
+        };
+
+        const categoryList = Object.entries(allCats).map(([key, cat]) => {
+            const icon = categoryIcons[key] || '•';
+            return `> ${icon} \`»\` **${cat.name}**`;
+        }).join('\n');
+        const headerSection = new SectionBuilder()
             .addTextDisplayComponents(
                 new TextDisplayBuilder().setContent(`### Hello, I'm ${botUsername}`)
             )
