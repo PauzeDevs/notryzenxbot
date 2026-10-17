@@ -2,6 +2,10 @@
 
 # NotRyzenX
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&duration=2600&pause=700&color=4C8DFF&center=true&vCenter=true&width=680&lines=NotRyzenX" alt="Animated header: NotRyzenX">
+</p>
+
 A self-hostable multipurpose Discord bot built with Discord.js v14 for moderation, server security, community management, AI, automation, and utility tooling.
 
 [![Discord](https://img.shields.io/discord/1414217749038891102?color=5865F2&label=Support&logo=discord&logoColor=white)](https://discord.gg/aerox)
